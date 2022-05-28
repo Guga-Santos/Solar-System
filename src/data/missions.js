@@ -21,7 +21,7 @@ const Missions = [
     destination: 'Marte',
   },
   {
-    name: 'Estação Internacional Espacial',
+    name: 'Estação Internacional',
     year: '1998',
     country: 'Estados Unidos e Rússia',
     destination: 'Órbita terrestre',

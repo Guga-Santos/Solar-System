@@ -6,6 +6,7 @@ import JupiterImg from '../images/Jupiter.png';
 import SaturnoImg from '../images/Saturno.png';
 import Uranoimg from '../images/Urano.png';
 import Netunoimg from '../images/Netuno.png';
+import Plutoimg from '../images/pluto.png';
 
 const Planets = [
   { name: 'Mercúrio', image: MercurioImg },
@@ -16,6 +17,7 @@ const Planets = [
   { name: 'Saturno', image: SaturnoImg },
   { name: 'Urano', image: Uranoimg },
   { name: 'Netuno', image: Netunoimg },
+  { name: 'Plutão', image: Plutoimg },
 ];
 
 export default Planets;

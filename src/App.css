@@ -1,3 +1,157 @@
-.App {
+body {
+  background: url(https://www.iau.org/static/djp/img/IAU_backimage.bdd6a2035456.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Exo', sans-serif;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+}
+
+.logo {
+  filter: invert(100%);
+  height: 50px;
+  padding-right:  10px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.4rem;
+}
+
+.planetTitle {
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 1rem;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,0,0.5), rgba(255,0,0,0));
+  width: 100%;
+  padding: 10px;
+}
+
+.planetContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 12vh;
+}
+
+.planetBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+}
+
+
+.planetBoxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 31%;
+  height: 32vh;
+  margin: 20px 1%;
+  /* background-color: rgba(255,255,255, 0.2); */
+  background-color: rgba(0,0,0, 0.6);
+  border-radius: 50px 0px;
+  box-shadow: 
+  0 2.8px 2.2px rgba(255, 255, 255, 0.034),
+  0 6.7px 5.3px rgba(255, 255, 255, 0.048),
+  0 12.5px 10px rgba(255, 255, 255, 0.06),
+  0 22.3px 17.9px rgba(255, 255, 255, 0.072),
+  0 41.8px 33.4px rgba(255, 255, 255, 0.086),
+  0 100px 80px rgba(255, 255, 255, 0.12)
+  ;
+}
+
+.planetBoxes:hover {
+  background-color: rgba(0,0,0, 0.45);
+  transition: 0.1s;
+  user-select: none;
+}
+
+
+
+.imgs {
+  width: 25vh;
+  animation: spin 20s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(20deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* .imgs:hover {
+  width: 30vh;
+  transition: 1s;
+} */
+
+.missionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.missionBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+.missionCards {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 30vh;
+  flex-wrap: wrap;
+  background-color: rgba(255,255,255, 0.5);
+  color: rgba(0,0,0, 0.8);
+  border: double rgba(255,255,255, 0.5);
+  margin: 10px 5px;
+  padding: 5px 10px;
+  border-radius: 30px 10px;
+  font-size: 2.5vh;
+}
+
+.missionCards p {
+  margin: 3px;
+}
+
+.missionName {
+  font-size: 4vh;
+  height: 36%;
+  text-align: center;
+  border-bottom: double white;
+}
+
+.footerContainer {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.072);
+}
+
+.footerP {
+  width: 100%;
   text-align: center;
 }
